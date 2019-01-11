@@ -1,2 +1,2 @@
-# sunny.java.commons.utils
-sunny.java.commons.utils
+# restful-web
+A RESTful web framework.

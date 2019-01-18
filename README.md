@@ -1,5 +1,5 @@
 # restful-web
-> A RESTful web framework.
+> restful-web is a RESTful web framework in Java.
 
 ## Modules
 * [rw-server](rw-server/README.md)

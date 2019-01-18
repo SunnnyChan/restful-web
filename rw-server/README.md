@@ -72,5 +72,61 @@
 ## Create Web Application or Service
 
 
+## Sample
+
+### SampleRestfulServer
+```text
+Default Port : 8899
+```
+
+#### start
+```bash
+sh sample-control.sh start
+```
+
+#### API
+##### http://localhost:8899/sample/v1/hello-world
+* GET
+* Response
+```json
+{
+    "meta": {
+        "code": 0,
+        "errorType": null,
+        "errorMsg": null,
+        "traceId": null
+    },
+    "data": {
+        "message": "hello world!"
+    }
+}
+```
+
+##### http://localhost:8899/sample/v1/echo
+* POST
+* Request
+```json
+{
+    "r1": "test1",
+    "r2": "test2"
+}
+```
+* Response
+```json
+{
+    "meta": {
+        "code": 0,
+        "errorType": null,
+        "errorMsg": null,
+        "traceId": null
+    },
+    "data": {
+        "echo": {
+            "r2": "test2",
+            "r1": "test1"
+        }
+    }
+}
+```
 ## Deploy
 

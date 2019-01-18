@@ -1,7 +1,7 @@
 # .gitignore for intellij,java,maven,windows,osx
 
 ### Intellij ###
-.idea
+.idea/
 .idea_modules/
 /out/
 
@@ -95,3 +95,9 @@ Temporary Items
 ### Commitizen ###
 node_modules/
 package.json
+common-web/src/test/
+rw-server/src/main/java/com/sunny/rw/server/domain/biz/
+rw-server/src/main/java/com/sunny/rw/server/domain/def/
+rw-server/src/main/java/com/sunny/rw/server/domain/service/
+rw-server/src/test/
+rw-service/src/main/

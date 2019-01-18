@@ -1,4 +1,4 @@
-package com.sunny.rw.modules;
+package com.sunny.rw.server.modules;
 
 /**
  * Created by sunnnychan@outlook.com on 2018/4/12

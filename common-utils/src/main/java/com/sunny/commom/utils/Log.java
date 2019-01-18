@@ -1,4 +1,4 @@
-package com.sunny.commom.utils.conf;
+package com.sunny.commom.utils;
 
 import com.alibaba.ttl.TransmittableThreadLocal;
 import org.slf4j.Logger;

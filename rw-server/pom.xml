@@ -5,10 +5,10 @@
   <parent>
     <groupId>com.sunny</groupId>
     <artifactId>restful-web</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
   </parent>
 
-  <groupId>com.sunny.rw</groupId>
+  <groupId>com.sunny.rw.server</groupId>
   <artifactId>rw-server</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
@@ -27,6 +27,12 @@
     </dependency>
 
     <dependency>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <artifactId>jersey-media-json-jackson</artifactId>
+      <version>${jersey.version}</version>
+    </dependency>
+
+    <dependency>
       <groupId>com.typesafe</groupId>
       <artifactId>config</artifactId>
       <version>1.3.2</version>
@@ -39,13 +45,18 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.sunny.commom</groupId>
+      <groupId>com.sunny.commom.utils</groupId>
       <artifactId>common-utils</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <version>1.0</version>
     </dependency>
     <dependency>
-      <groupId>com.sunny.commom</groupId>
+      <groupId>com.sunny.commom.web</groupId>
       <artifactId>common-web</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sunny.rw.service</groupId>
+      <artifactId>rw-service</artifactId>
       <version>1.0</version>
     </dependency>
   </dependencies>
@@ -70,8 +81,6 @@
           <target>${java.version}</target>
         </configuration>
       </plugin>
-
-
     </plugins>
   </build>
 </project>

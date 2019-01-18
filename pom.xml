@@ -4,7 +4,7 @@
 
   <groupId>com.sunny</groupId>
   <artifactId>restful-web</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>pom</packaging>
 
   <name>restful-web</name>

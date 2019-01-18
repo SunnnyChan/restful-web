@@ -1,4 +1,4 @@
-package com.sunny.rw.conf;
+package com.sunny.rw.server.conf;
 
 /*
  * Created by sunnnychan@outlook.com on 2019/1/11.
@@ -20,7 +20,7 @@ public class Conf {
   }
 
   public static String getEnv() {
-    return getServerConf().getString("environment-type");
+    return getServerConf().getString("env");
   }
 
   public static int getServerPort() {

@@ -1,7 +1,7 @@
 package com.sunny.common.infra.redis;
 
 /*
- * Created by chenguangsunnychan on 2019/1/21.
+ * Created by sunnnychan@outlook.com on 2019/1/21.
  */
 
 import redis.clients.jedis.JedisPool;

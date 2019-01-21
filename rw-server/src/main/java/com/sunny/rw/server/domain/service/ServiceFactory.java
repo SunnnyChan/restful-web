@@ -4,47 +4,40 @@ package com.sunny.rw.server.domain.service;
  * Created by sunnnychan@outlook.com on 2019/1/21.
  */
 
-import jersey.repackaged.com.google.common.collect.Maps;
+import com.sunny.commom.utils.dp.SingletonFactory;
+import com.sunny.commom.utils.log.Log;
 
-import java.util.Map;
+import java.util.Objects;
 
 public class ServiceFactory {
-  private static Map<String, Object> serviceMap = Maps.newConcurrentMap();
-
   /**
    * get service instance by reflect
    *
-   * @param clazz service interface class
-   * @param <T>   interface
+   * @param clazz class
+   * @param <T>   class
    * @return instance
    */
   public static synchronized <T> T get(Class<T> clazz) {
-    T instance = null;
-    try {
-      instance = getInstance(clazz);
-    } catch (IllegalAccessException | InstantiationException e) {
-      e.printStackTrace();
+    T object = SingletonFactory.get(clazz);
+    if (!Objects.isNull(object)) {
+      ((Service) object).start();
     }
-    return instance;
+    Log.error("create Object failed, Class Name : %s ", clazz.getName());
+    return object;
   }
 
-  private static <T> T getInstance(Class<T> clazz) throws IllegalAccessException, InstantiationException {
-    String serviceName = clazz.getName();
-    T service = (T) serviceMap.get(serviceName);
-    if (service == null) {
-      service = clazz.newInstance();
-      serviceMap.put(serviceName, service);
-      ((Service) service).start();
-    }
-    return service;
+  public static synchronized <T> void destroy(Class<T> clazz) {
+    SingletonFactory.destroy(clazz);
   }
 
   /**
    * close all service.
    */
   public static void close() {
-    for (Object service : serviceMap.values()) {
-      ((Service) service).close();
+    for (Object service : SingletonFactory.getInstances().values()) {
+      if (service instanceof Service) {
+        ((Service) service).close();
+      }
     }
   }
 }

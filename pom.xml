@@ -26,13 +26,18 @@
   </dependencies>
 
   <modules>
-    <module>rw-server</module>
     <module>common-utils</module>
-    <module>rw-service</module>
     <module>common-web</module>
-    <module>common-dev</module>
-    <module>common-monitor</module>
     <module>common-db</module>
     <module>common-infra</module>
+
+    <module>service-discovery</module>
+    <module>service-register</module>
+    <module>service-monitor</module>
+
+    <module>common-dev</module>
+
+    <module>rw-server</module>
+
   </modules>
 </project>

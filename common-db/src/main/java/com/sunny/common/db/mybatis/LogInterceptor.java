@@ -25,6 +25,7 @@ import java.util.*;
  * Created by sunnnychan@outlook.com on 2019/1/21.
  */
 public class LogInterceptor implements Interceptor {
+
   @Override
   public Object intercept(Invocation invocation) throws Throwable {
     HashMap<String, Object> logMessage = new HashMap<String, Object>();

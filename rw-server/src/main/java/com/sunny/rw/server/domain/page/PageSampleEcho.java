@@ -5,7 +5,7 @@ package com.sunny.rw.server.domain.page;
  */
 
 import com.alibaba.fastjson.JSONObject;
-import com.sunny.commom.utils.Log;
+import com.sunny.commom.utils.log.Log;
 
 public class PageSampleEcho extends PageBase<JSONObject> {
   @Override

@@ -5,7 +5,7 @@ package com.sunny.commom.web.response;
  */
 
 import com.alibaba.fastjson.JSON;
-import com.sunny.commom.utils.Log;
+import com.sunny.commom.utils.log.Log;
 
 import java.util.Arrays;
 import java.util.HashMap;

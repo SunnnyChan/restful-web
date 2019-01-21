@@ -1,7 +1,7 @@
 package com.sunny.rw.server.domain.page;
 
 import com.alibaba.fastjson.JSON;
-import com.sunny.commom.utils.Log;
+import com.sunny.commom.utils.log.Log;
 import jersey.repackaged.com.google.common.collect.Maps;
 
 import java.util.HashMap;

@@ -32,5 +32,6 @@
     <module>common-web</module>
     <module>common-dev</module>
     <module>common-monitor</module>
+    <module>common-db</module>
   </modules>
 </project>

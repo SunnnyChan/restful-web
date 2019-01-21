@@ -30,5 +30,7 @@
     <module>common-utils</module>
     <module>rw-service</module>
     <module>common-web</module>
+    <module>common-dev</module>
+    <module>common-monitor</module>
   </modules>
 </project>

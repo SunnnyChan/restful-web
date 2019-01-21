@@ -7,10 +7,10 @@
     <artifactId>restful-web</artifactId>
     <version>1.0</version>
   </parent>
-  <groupId>com.sunny.commom.dev</groupId>
-  <artifactId>common-dev</artifactId>
+  <groupId>com.sunny.common.monitor</groupId>
+  <artifactId>common-monitor</artifactId>
   <version>1.0</version>
-  <name>common-dev</name>
+  <name>common-monitor</name>
   <url>http://maven.apache.org</url>
 
   <dependencies>

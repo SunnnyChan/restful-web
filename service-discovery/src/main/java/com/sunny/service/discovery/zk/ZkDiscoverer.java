@@ -16,7 +16,7 @@ import java.io.Closeable;
 import java.io.IOException;
 import java.util.Collection;
 
-public class ZkDiscoverer<T> implements Closeable {
+public class ZkDiscoverer implements Closeable {
   private final ServiceDiscovery<ServiceInstanceDetail> serviceDiscovery;
   private final ServiceCache<ServiceInstanceDetail> serviceCache;
   private final ServiceProvider<ServiceInstanceDetail> serviceProvider;

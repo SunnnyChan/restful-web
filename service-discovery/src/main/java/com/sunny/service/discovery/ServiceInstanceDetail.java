@@ -11,6 +11,9 @@ public class ServiceInstanceDetail {
   private String name;
   private String description;
 
+  public ServiceInstanceDetail() {
+  }
+
   /**
    * constructor.
    * @param id service id

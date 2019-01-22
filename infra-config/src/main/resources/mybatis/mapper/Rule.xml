@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sunny.infra.conf.center.RuleModel">
+    <select id="getAllRules" resultType="EngineConfig">
+        SELECT
+        id,
+        project,
+        group,
+        type,
+        content
+        FROM engine_config
+        WHERE enable = 1
+    </select>
+
+</mapper>

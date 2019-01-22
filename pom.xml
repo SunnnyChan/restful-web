@@ -32,12 +32,11 @@
     <module>common-infra</module>
 
     <module>service-discovery</module>
-    <module>service-register</module>
     <module>service-monitor</module>
 
     <module>common-dev</module>
 
     <module>rw-server</module>
-
+    <module>infra-config</module>
   </modules>
 </project>

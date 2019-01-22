@@ -1,4 +1,4 @@
-package com.sunny.commom.utils.conf;
+package com.sunny.infra.conf.parser;
 
 /*
  * Created by sunnnychan@outlook.com on 2019/1/11.

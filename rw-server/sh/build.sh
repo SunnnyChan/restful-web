@@ -7,8 +7,11 @@ WORK_MODULE="rw-server"
 
 MODULES="
 common-utils
+common-db
 common-web
-rw-service
+
+infra-config
+service-discovery
 rw-server
 "
 

@@ -1,4 +1,4 @@
-package com.sunny.rw.server.domain.service;
+package com.sunny.commom.utils.resource;
 
 /*
  * Created by sunnnychan@outlook.com on 2019/1/21.
@@ -9,7 +9,7 @@ import com.sunny.commom.utils.log.Log;
 
 import java.util.Objects;
 
-public class ServiceFactory {
+public class ResourceFactory {
   /**
    * get service instance by reflect
    *
@@ -20,7 +20,7 @@ public class ServiceFactory {
   public static synchronized <T> T get(Class<T> clazz) {
     T object = SingletonFactory.get(clazz);
     if (!Objects.isNull(object)) {
-      ((Service) object).start();
+      ((Resource) object).start();
     }
     Log.error("create Object failed, Class Name : %s ", clazz.getName());
     return object;
@@ -35,8 +35,8 @@ public class ServiceFactory {
    */
   public static void close() {
     for (Object service : SingletonFactory.getInstances().values()) {
-      if (service instanceof Service) {
-        ((Service) service).close();
+      if (service instanceof Resource) {
+        ((Resource) service).close();
       }
     }
   }

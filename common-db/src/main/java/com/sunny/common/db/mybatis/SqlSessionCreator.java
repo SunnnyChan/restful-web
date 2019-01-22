@@ -10,14 +10,14 @@ import java.io.InputStream;
 /*
  * Created by sunnnychan@outlook.com on 2019/1/21.
  */
-public class SqlSession {
+public class SqlSessionCreator {
   /**
    * start mysql mybatis factory.
    */
-  public static SqlSessionFactory startMySql(String envType) {
+  public static SqlSessionFactory startMySql(String configFile, String envType) {
     InputStream inputStream = null;
     try {
-      inputStream = Resources.getResourceAsStream("mysql.xml");
+      inputStream = Resources.getResourceAsStream(configFile);
     } catch (IOException e) {
       e.printStackTrace();
     }

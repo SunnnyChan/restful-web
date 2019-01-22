@@ -1,10 +1,9 @@
-package com.sunny.rw.server.domain.service;
+package com.sunny.commom.utils.resource;
 
 /*
  * Created by sunnnychan@outlook.com on 2019/1/21.
  */
-public interface Service {
-
+public interface Resource {
   void start();
   void close();
 }

@@ -1,10 +1,11 @@
 package com.sunny.rw.server.modules.sample;
 
 /*
- * Created by sunnnychan@outlook.com  on 2019/1/11.
+ * Created by sunnnychan@outlook.com on 2019/1/11.
  */
 
-import com.sunny.rw.server.modules.AbstractModule;
+import com.sunny.commom.utils.module.AbstractModule;
+import com.sunny.commom.utils.thread.ThreadUtils;
 
 public class SampleModule extends AbstractModule {
   @Override
@@ -13,10 +14,10 @@ public class SampleModule extends AbstractModule {
   }
 
   @Override
-  protected void doWork() throws Exception {
+  protected void doWork() {
     do {
-      System.out.println(this.name + ": do nothing!");
-      Thread.sleep(100000);
+      System.out.println(this.name + ": do a poll print!");
+      ThreadUtils.noExceptionSleep(100000);
     } while (true);
   }
 }

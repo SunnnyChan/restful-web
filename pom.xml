@@ -26,6 +26,7 @@
   </dependencies>
 
   <modules>
+    <module>common-dev</module>
     <module>common-utils</module>
     <module>common-web</module>
     <module>common-db</module>
@@ -34,9 +35,8 @@
     <module>service-discovery</module>
     <module>service-monitor</module>
 
-    <module>common-dev</module>
+    <module>infra-config</module>
 
     <module>rw-server</module>
-    <module>infra-config</module>
   </modules>
 </project>

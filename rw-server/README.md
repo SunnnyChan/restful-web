@@ -71,21 +71,29 @@
 
 ## Create Web Application or Service
 
+## Create a server named SampleServer
 
-## Sample
-
-### SampleRestfulServer
+#### 
 ```text
-Default Port : 8899
-```
+server {
+  name : sample-server // server name
+  modules: ["sample.SampleModule"] // thread modules to start
+  port : 8899  // server port
+  env : "product" // deploy type
 
-#### start
+  # running as web service
+  service-register-flag : false  // need to register as a service
+  zk_register-path : "" // use zk as service discovery infra
+}
+```
+[sample-rw-server.conf](conf/sample-rw-server.conf)
+### start
 ```bash
 sh sample-control.sh start
 ```
 
-#### API
-##### http://localhost:8899/sample/v1/hello-world
+### API
+#### http://localhost:8899/sample/v1/hello-world
 * GET
 * Response
 ```json
@@ -102,7 +110,7 @@ sh sample-control.sh start
 }
 ```
 
-##### http://localhost:8899/sample/v1/echo
+#### http://localhost:8899/sample/v1/echo
 * POST
 * Request
 ```json

@@ -1,6 +1,5 @@
 package com.sunny.infra.conf.center.db;
 
-import com.sunny.commom.utils.resource.Resource;
 import com.sunny.infra.conf.center.RuleModel;
 import com.sunny.infra.conf.utils.MysqlSessionFactory;
 import org.apache.ibatis.session.SqlSession;
@@ -20,8 +19,8 @@ public class RuleService {
 
   public List<RuleModel> getAllRules() {
     try (SqlSession sqlSession = sessionFactory.openSession(true)) {
-      RuleMapper RuleMapper = sqlSession.getMapper(RuleMapper.class);
-      return RuleMapper.getAllRules();
+      RuleMapper ruleMapper = sqlSession.getMapper(RuleMapper.class);
+      return ruleMapper.getAllRules();
     }
   }
 }

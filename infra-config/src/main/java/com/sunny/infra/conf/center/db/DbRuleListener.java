@@ -15,7 +15,7 @@ import java.util.List;
  * Created by sunnnychan@outlook.com on 2019/1/22.
  */
 public class DbRuleListener extends AbstractModule {
-  RuleService ruleService = SingletonFactory.get(RuleService.class);
+  private RuleService ruleService = SingletonFactory.get(RuleService.class);
 
   @Override
   public synchronized void start() {

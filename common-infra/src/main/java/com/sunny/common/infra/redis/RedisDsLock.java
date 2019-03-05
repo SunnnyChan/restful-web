@@ -30,7 +30,7 @@ public class RedisDsLock {
   }
 
   /**
-   * poll to get a lock until success
+   * poll to get a lock until success.
    * @return time(ms) spent
    */
   public static long getLock(Jedis jedis, String key, String serviceObjectId, int expireTime) {

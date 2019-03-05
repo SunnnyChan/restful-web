@@ -10,7 +10,7 @@ public class SingletonFactory {
   private static ConcurrentHashMap<String, Object> instances = new ConcurrentHashMap<>();
 
   /**
-   * get instance by reflect
+   * get instance by reflect.
    *
    * @param clazz class
    * @param <T>   class

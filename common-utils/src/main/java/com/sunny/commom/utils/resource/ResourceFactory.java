@@ -11,7 +11,7 @@ import java.util.Objects;
 
 public class ResourceFactory {
   /**
-   * get service instance by reflect
+   * get service instance by reflect.
    *
    * @param clazz class
    * @param <T>   class

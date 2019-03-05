@@ -33,13 +33,13 @@
     </dependency>
 
     <dependency>
-      <groupId>com.sunny.commom.utils</groupId>
+      <groupId>com.sunny.common.utils</groupId>
       <artifactId>common-utils</artifactId>
       <version>1.0</version>
     </dependency>
 
     <dependency>
-      <groupId>com.sunny.commom.web</groupId>
+      <groupId>com.sunny.common.web</groupId>
       <artifactId>common-web</artifactId>
       <version>1.0</version>
     </dependency>

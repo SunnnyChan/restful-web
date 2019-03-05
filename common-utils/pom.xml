@@ -8,7 +8,7 @@
     <version>1.0</version>
   </parent>
 
-  <groupId>com.sunny.commom.utils</groupId>
+  <groupId>com.sunny.common.utils</groupId>
   <artifactId>common-utils</artifactId>
   <version>1.0</version>
   <name>common-utils</name>

@@ -24,6 +24,14 @@ public class ServerConf {
     return getServerConf().getString("name");
   }
 
+  public static String getControllerClassPath() {
+    return getServerConf().getString("controller-class-path");
+  }
+
+  public static String getModulesClassPath() {
+    return getServerConf().getString("modules-class-path");
+  }
+
   public static List<String> getModules() {
     return getServerConf().getStringList("modules");
   }

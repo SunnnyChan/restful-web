@@ -27,14 +27,14 @@ public class RwServer {
   }
 
   private void startServer() throws Exception {
-    Server server = JerseyServer.create(ServerConf.getServerPort(), "com.sunny.rw.server.controller");
+    Server server = JerseyServer.create(ServerConf.getServerPort(), ServerConf.getControllerClassPath());
     server.start();
   }
 
   private void startModules() throws Exception {
     if (!ServerConf.getModules().isEmpty()) {
       for (String moduleClassName : ServerConf.getModules()) {
-        Class classType = Class.forName("com.sunny.rw.server.modules." + moduleClassName);
+        Class classType = Class.forName(ServerConf.getModulesClassPath() + "." + moduleClassName);
         AbstractModule module = (AbstractModule) classType.newInstance();
         module.start();
       }

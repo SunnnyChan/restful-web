@@ -55,4 +55,4 @@ Config, config parser and  config center.
 *  service-monitor 
 
 ## Usage
-* [How to quickly create a web service or web application?](rw-server/README.md)
+* [How to quickly create a web service or web application?](_doc/restful-web_usage.md)

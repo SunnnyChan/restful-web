@@ -53,14 +53,14 @@ server {
 }
 ```
 
-***TODO***
-```md
-rw-server 实例的生成 需要修改脚本来自动生成。
-```
-
 ### build & start
 ```bash
 sh sample-control.sh build && sh sample-control.sh start
+```
+
+***TODO***
+```md
+rw-server 实例的生成 需要修改脚本来自动生成。
 ```
 
 ### API

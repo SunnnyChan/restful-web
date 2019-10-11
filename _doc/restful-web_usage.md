@@ -3,7 +3,7 @@
 ## Create Web Application or Service
 * 获取源码
 ```sh
-git clone https://github.com/apache/zeppelin.git
+git clone https://github.com/SunnnyChan/restful-web.git
 ```
 * 编译源码
 ```sh

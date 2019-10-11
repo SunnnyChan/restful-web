@@ -3,7 +3,7 @@ package com.sunny.infra.conf.center;
 import java.util.List;
 
 /*
- * Created by sunnnychan@outlook.com on 2019/1/22.
+ * Created by sunnnychan@gmail.com on 2019/1/22.
  */
 public enum Rules {
   INSTANCE;

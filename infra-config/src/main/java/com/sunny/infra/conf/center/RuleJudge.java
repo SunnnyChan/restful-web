@@ -7,7 +7,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /*
- * Created by sunnnychan@outlook.com on 2019/1/22.
+ * Created by sunnnychan@gmail.com 2019/1/22.
  */
 public class RuleJudge {
 

@@ -1,7 +1,7 @@
 package com.sunny.infra.conf.center;
 
 /*
- * Created by sunnnychan@outlook.com on 2019/1/22.
+ * Created by sunnnychan@gmail.com on 2019/1/22.
  */
 public class RuleModel {
   private int id;

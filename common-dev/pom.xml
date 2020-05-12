@@ -7,11 +7,11 @@
     <artifactId>restful-web</artifactId>
     <version>1.0</version>
   </parent>
-  <groupId>com.sunny.common.dev</groupId>
+
+  <groupId>com.sunny.common</groupId>
   <artifactId>common-dev</artifactId>
   <version>1.0</version>
   <name>common-dev</name>
-  <url>http://maven.apache.org</url>
 
   <dependencies>
     <dependency>
@@ -32,10 +32,11 @@
     </dependency>
 
     <dependency>
-      <groupId>com.sunny.service.discovery</groupId>
+      <groupId>com.sunny.service</groupId>
       <artifactId>service-discovery</artifactId>
       <version>1.0</version>
     </dependency>
+
   </dependencies>
 
   <build>

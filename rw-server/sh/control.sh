@@ -1,14 +1,17 @@
 #!/usr/bin/env bash
 
-MODULE=$1
+# usage : sh control.sh DefaultRwServer start
+
+SERVER=$1
 OPERATION=$2
 
 WORK_HOME="$(cd $(dirname $0) && pwd -P)"
 cd ${WORK_HOME}
 
 CONFIG_FILE="conf/rw-server.conf"
-logfile="var/${MODULE}.log"
-PID_FILE="var/${MODULE}.pid"
+
+logfile="var/${SERVER}.log"
+PID_FILE="var/${SERVER}.pid"
 
 mkdir -p var &>/dev/null
 
@@ -28,7 +31,7 @@ function check_pid() {
 
 
 function start() {
-    java -Xms2g -Xmx8g -cp rw-server-1.0.jar com.sunny.rw.server.modules.${MODULE} ${CONFIG_FILE} > start.log 2>&1
+    java -Xms2g -Xmx8g -cp rw-server-1.0.jar com.sunny.rw.server.application.${SERVER} ${CONFIG_FILE} > start.log 2>&1
     echo $! > ${PID_FILE}
 }
 

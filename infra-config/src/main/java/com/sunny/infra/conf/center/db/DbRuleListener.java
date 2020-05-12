@@ -11,10 +11,11 @@ import com.sunny.infra.conf.center.Rules;
 import java.util.Arrays;
 import java.util.List;
 
-/*
- * Created by sunnnychan@outlook.com on 2019/1/22.
+/**
+ * @author Created by sunnnychan@outlook.com on 2019/1/22.
  */
 public class DbRuleListener extends AbstractModule {
+
   private RuleService ruleService = SingletonFactory.get(RuleService.class);
 
   @Override
@@ -24,6 +25,7 @@ public class DbRuleListener extends AbstractModule {
     super.start();
   }
 
+  @Override
   protected void doWork() {
     try {
       do {

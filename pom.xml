@@ -15,13 +15,14 @@
   <inceptionYear>2018</inceptionYear>
 
   <modules>
+    <module>service-discovery</module>
     <module>common-dev</module>
     <module>common-utils</module>
     <module>common-web</module>
     <module>common-db</module>
     <module>common-infra</module>
 
-    <module>service-discovery</module>
+
     <module>service-monitor</module>
 
     <module>infra-config</module>
@@ -94,7 +95,7 @@
             <id>validate</id>
             <phase>validate</phase>
             <configuration>
-              <configLocation>_dev/resources/checkstyle.xml</configLocation>
+              <configLocation>checkstyle.xml</configLocation>
               <encoding>UTF-8</encoding>
               <consoleOutput>true</consoleOutput>
               <failOnViolation>true</failOnViolation>

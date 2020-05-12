@@ -8,11 +8,10 @@
     <version>1.0</version>
   </parent>
 
-  <groupId>com.sunny.common.utils</groupId>
+  <groupId>com.sunny.common</groupId>
   <artifactId>common-utils</artifactId>
   <version>1.0</version>
   <name>common-utils</name>
-  <url>http://maven.apache.org</url>
 
   <dependencies>
     <dependency>
@@ -60,7 +59,6 @@
           <target>${java.version}</target>
         </configuration>
       </plugin>
-
 
     </plugins>
   </build>

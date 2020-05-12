@@ -1,15 +1,15 @@
-package com.sunny.rw.server.modules;
+package com.sunny.rw.server.application;
 
 import com.sunny.infra.conf.parser.ConfInit;
 
 /**
  * @author Created by sunnnychan@outlook.com on 2019/1/22.
  */
-public class RwServer extends AbstractRwServer {
+public class DefaultRwServer extends AbstractRwServer {
 
   public static void main(String[] args) throws Exception {
     parserConf(args);
-    RwServer rwServer = new RwServer();
+    DefaultRwServer rwServer = new DefaultRwServer();
     rwServer.startServer();
     rwServer.startModules();
   }

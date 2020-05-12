@@ -6,9 +6,10 @@ import com.typesafe.config.Config;
 import java.util.Objects;
 
 /**
+ * 依赖的服务相关配置.
  * @author Created by sunnnychan@outlook.com  on 2019/1/22.
- * 依赖的服务相关配置
  */
+
 public class RpcServiceConf {
   private static Config rpcServiceConf;
 

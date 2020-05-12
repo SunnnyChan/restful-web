@@ -7,11 +7,10 @@
     <artifactId>restful-web</artifactId>
     <version>1.0</version>
   </parent>
-  <groupId>com.sunny.common.infra</groupId>
+  <groupId>com.sunny.common</groupId>
   <artifactId>common-infra</artifactId>
   <version>1.0</version>
   <name>common-infra</name>
-  <url>http://maven.apache.org</url>
 
   <dependencies>
     <dependency>
@@ -21,7 +20,7 @@
     </dependency>
 
     <dependency>
-      <groupId>com.sunny.common.utils</groupId>
+      <groupId>com.sunny.common</groupId>
       <artifactId>common-utils</artifactId>
       <version>1.0</version>
     </dependency>

@@ -8,11 +8,10 @@
     <version>1.0</version>
   </parent>
 
-  <groupId>com.sunny.common.web</groupId>
+  <groupId>com.sunny.common</groupId>
   <artifactId>common-web</artifactId>
   <version>1.0</version>
   <name>common-web</name>
-  <url>http://maven.apache.org</url>
 
   <dependencies>
     <dependency>
@@ -22,7 +21,7 @@
     </dependency>
 
     <dependency>
-      <groupId>com.sunny.common.utils</groupId>
+      <groupId>com.sunny.common</groupId>
       <artifactId>common-utils</artifactId>
       <version>1.0</version>
     </dependency>

@@ -8,11 +8,10 @@
     <version>1.0</version>
   </parent>
 
-  <groupId>com.sunny.infra.conf</groupId>
+  <groupId>com.sunny.infra</groupId>
   <artifactId>infra-config</artifactId>
   <version>1.0</version>
   <name>infra-config</name>
-  <url>http://maven.apache.org</url>
 
   <dependencies>
     <dependency>
@@ -28,13 +27,13 @@
     </dependency>
 
     <dependency>
-      <groupId>com.sunny.common.utils</groupId>
+      <groupId>com.sunny.common</groupId>
       <artifactId>common-utils</artifactId>
       <version>1.0</version>
     </dependency>
 
     <dependency>
-      <groupId>com.sunny.common.db</groupId>
+      <groupId>com.sunny.common</groupId>
       <artifactId>common-db</artifactId>
       <version>1.0</version>
     </dependency>

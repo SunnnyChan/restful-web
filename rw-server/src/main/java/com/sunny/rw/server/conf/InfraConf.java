@@ -6,9 +6,8 @@ import com.typesafe.config.Config;
 import java.util.Objects;
 
 /**
- *  @author Created by sunnnychan@outlook.com on 2019/1/22.
- *
- *  基础设施相关配置
+ * 基础设施相关配置.
+ * @author Created by sunnnychan@outlook.com on 2019/1/22.
  */
 
 public class InfraConf {

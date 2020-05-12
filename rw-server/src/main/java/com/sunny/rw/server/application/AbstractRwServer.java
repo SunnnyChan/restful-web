@@ -1,4 +1,4 @@
-package com.sunny.rw.server.modules;
+package com.sunny.rw.server.application;
 
 import com.sunny.commom.utils.module.AbstractModule;
 import com.sunny.commom.web.jersey.JerseyServer;

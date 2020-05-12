@@ -1,4 +1,4 @@
-package com.sunny.rw.server.modules.sample;
+package com.sunny.rw.server.modules;
 
 import com.sunny.commom.utils.module.AbstractModule;
 import com.sunny.commom.utils.thread.ThreadUtils;

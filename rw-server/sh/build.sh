@@ -38,7 +38,7 @@ for line in ${MODULES}
 do
     if ! build ${line}
     then
-        exist 1
+        exit 1
     fi
 done
 

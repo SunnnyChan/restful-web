@@ -5,10 +5,12 @@ import com.typesafe.config.Config;
 
 import java.util.Objects;
 
-/*
- * Created by sunnnychan@outlook.com on 2019/1/22.
- * 基础设施相关配置
+/**
+ *  @author Created by sunnnychan@outlook.com on 2019/1/22.
+ *
+ *  基础设施相关配置
  */
+
 public class InfraConf {
   private static Config infraConf;
 

@@ -1,23 +1,28 @@
-# How to quickly create a web service or web application?
+# How to quickly create a web service or web application?  
 
-## Create Web Project
-* 获取源码
-```sh
+## Create Web Project  
+
+* 获取源码  
+
+```bash
 git clone https://github.com/SunnnyChan/restful-web.git
-```
-* 创建基于 restful-web 框架的 web 项目
-```md
-例如要在 /Users/sunny/WorkPlace 目录下 创建 名为 sunny-web 的web项目，执行：
+```  
+
+* 创建基于 restful-web 框架的 web 项目  
+
+```bash
+# 例如 要在 /Users/sunny/WorkPlace 目录下 创建 名为 sunny-web 的web项目，执行：  
 cd  /Users/sunny/WorkPlace，
-拷贝源代码中脚本 restful-web/_dev/sh/rw-server/create_rw-server_project.sh 至当前目录，
+# 拷贝源代码中脚本 restful-web/_dev/sh/rw-server/create_rw-server_project.sh 至当前目录，
 sh create_rw-server_project.sh sunny-web
 ```
-```md
-在 sunny-server/src/main/java/com/sunny/rw/server/modules 目录下 创建 mainClass：
-SunnyServer.java
-```
 
-## Create a Web server named SampleServer
+# 在 sunny-server/src/main/java/com/sunny/rw/server/modules 目录下 创建 mainClass：
+SunnyServer.java
+
+
+## Create a Web server named SampleServer  
+
 ```java
 public class SampleServer extends AbstractRwServer {
 
@@ -37,10 +42,13 @@ public class SampleServer extends AbstractRwServer {
     }
 
 }
-```
-* 对应的配置文件
-[sample-rw-server.conf](../rw-server/conf/sample-rw-server.conf)
-```text
+```  
+
+* 对应的配置文件  
+
+sample-rw-server.conf
+
+```conf
 server {
   name : sample-server // server name
   modules: ["sample.SampleModule"] // thread modules to start
@@ -53,20 +61,23 @@ server {
 }
 ```
 
-### build & start
+### build & start  
+
 ```bash
 sh sample-control.sh build && sh sample-control.sh start
 ```
 
-***TODO***
-```md
-rw-server 实例的生成 需要修改脚本来自动生成。
-```
+***TODO***  
 
-### API
-#### http://localhost:8899/sample/v1/hello-world
-* GET
-* Response
+rw-server 实例的生成 需要修改脚本来自动生成。  
+
+### 测试
+
+#### http://localhost:8899/sample/v1/hello-world  
+
+* GET  
+
+* Response  
 ```json
 {
     "meta": {
@@ -81,16 +92,19 @@ rw-server 实例的生成 需要修改脚本来自动生成。
 }
 ```
 
-#### http://localhost:8899/sample/v1/echo
-* POST
-* Request
+#### http://localhost:8899/sample/v1/echo  
+
+* POST  
+
+* Request  
 ```json
 {
     "r1": "test1",
     "r2": "test2"
 }
 ```
-* Response
+* Response  
+
 ```json
 {
     "meta": {
@@ -107,5 +121,7 @@ rw-server 实例的生成 需要修改脚本来自动生成。
     }
 }
 ```
-## Deploy
+
+## Deploy  
+
 

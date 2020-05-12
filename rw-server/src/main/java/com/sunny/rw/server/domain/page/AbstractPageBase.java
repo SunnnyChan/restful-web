@@ -6,11 +6,11 @@ import jersey.repackaged.com.google.common.collect.Maps;
 
 import java.util.HashMap;
 
-/*
- * Created by sunnnychan@outlook.com on 2018/4/10.
+/**
+ * @author Created by sunnnychan@outlook.com on 2018/4/10.
  */
 
-public abstract class PageBase<T> {
+public abstract class AbstractPageBase<T> {
   protected HashMap<String, Object> data = Maps.newHashMap();
   protected T request;
 

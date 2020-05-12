@@ -12,6 +12,7 @@ import javax.ws.rs.core.MediaType;
 /*
  * Created by sunnnychan@outlook.com on 2019/1/11.
  */
+
 @Path("/sample/v1")
 public class SampleResource {
 

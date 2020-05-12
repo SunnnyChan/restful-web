@@ -1,11 +1,11 @@
 package com.sunny.rw.server.modules.sample;
 
-/*
- * Created by sunnnychan@outlook.com on 2019/1/11.
- */
-
 import com.sunny.commom.utils.module.AbstractModule;
 import com.sunny.commom.utils.thread.ThreadUtils;
+
+/**
+ * @author Created by sunnnychan@outlook.com on 2019/1/11.
+ */
 
 public class SampleModule extends AbstractModule {
   @Override

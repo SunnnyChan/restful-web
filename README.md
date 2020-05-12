@@ -1,18 +1,22 @@
-# restful-web
-> restful-web is a RESTful web framework in Java.
+restful-web
+==========
 
-## Modules
-* [rw-server](rw-server/README.md)
+restful-web is a RESTful web framework in Java.  
+
+# Modules  
+
+* [rw-server](rw-server/README.md)  
+
 ```text
-RESTful web server module, used for creating a RESTful API web service or web application.
+RESTful web server module, used for creating a RESTful API web service or web application.  
 ```
 
-* common-dev
+* common-dev  
 ```text
 development tools.
 ```
 
-* common-utils
+* common-utils  
 ```text
 Common utilities, as 
 Log
@@ -20,12 +24,12 @@ Config
 etc.
 ```
 
-* common-db
+* common-db  
 ```text
 database
 ```
 
-* common-web
+* common-web  
 ```text
 Web common utilities.
 Jersey
@@ -33,12 +37,12 @@ Web API response
 etc.
 ```
 
-* common-infra
+* common-infra  
 ```text
 infrastructure, redis、Zookeeper etc.
 ```
 
-* service-discovery 
+* service-discovery   
 ```text
 When rw-server running as a web service.
 service-discovery implement service register etc.
@@ -47,12 +51,13 @@ service-discovery implement service register etc.
 to discovery dependency services.
 ```
 
-* infra-config
+* infra-config  
 ```text
 Config, config parser and  config center.
 ```
 
-*  service-monitor 
+*  service-monitor   
 
-## Usage
+# Usage  
+
 * [How to quickly create a web service or web application?](_doc/restful-web_usage.md)

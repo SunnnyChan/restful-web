@@ -5,8 +5,8 @@ import com.typesafe.config.Config;
 
 import java.util.Objects;
 
-/*
- * Created by sunnnychan@outlook.com  on 2019/1/22.
+/**
+ * @author Created by sunnnychan@outlook.com  on 2019/1/22.
  * 依赖的服务相关配置
  */
 public class RpcServiceConf {

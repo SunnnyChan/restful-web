@@ -1,14 +1,14 @@
 package com.sunny.rw.server.conf;
 
-/*
- * Created by sunnnychan@outlook.com on 2019/1/11.
- */
-
 import com.sunny.infra.conf.parser.ConfInit;
 import com.typesafe.config.Config;
 
 import java.util.List;
 import java.util.Objects;
+
+/**
+ * @author Created by sunnnychan@outlook.com on 2019/1/11.
+ */
 
 public class ServerConf {
   private static Config serverConf;

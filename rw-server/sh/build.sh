@@ -46,7 +46,6 @@ done
 rm -rf ${OUTPUT_DIR}
 mkdir ${OUTPUT_DIR}
 cp "${BASE_DIR}/sh/control.sh" ${OUTPUT_DIR}
-cp "${BASE_DIR}/sh/$1-control.sh" ${OUTPUT_DIR}
 
 cp -r ${BASE_DIR}/conf ${OUTPUT_DIR}
 mv ${BASE_DIR}/target/rw-server-1.0.jar ${OUTPUT_DIR}

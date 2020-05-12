@@ -2,13 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.sunny.restful-web</groupId>
+  <groupId>com.sunny</groupId>
   <artifactId>restful-web</artifactId>
   <version>1.0</version>
   <packaging>pom</packaging>
-
   <name>restful-web</name>
-  <url></url>
 
   <licenses></licenses>
   <scm></scm>
@@ -21,12 +19,8 @@
     <module>common-web</module>
     <module>common-db</module>
     <module>common-infra</module>
-
-
     <module>service-monitor</module>
-
     <module>infra-config</module>
-
     <module>rw-server</module>
   </modules>
 

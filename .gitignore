@@ -102,3 +102,4 @@ var/
 output/
 log/
 logs/
+.log

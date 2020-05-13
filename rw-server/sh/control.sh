@@ -3,7 +3,8 @@
 # usage : sh control.sh DefaultRwServer start
 
 SERVER=$1
-OPERATION=$2
+CONFIG_FILE=$2
+OPERATION=$3
 
 WORK_HOME="$(cd $(dirname $0) && pwd -P)"
 cd ${WORK_HOME}

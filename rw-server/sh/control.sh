@@ -31,7 +31,7 @@ function check_pid() {
 
 
 function start() {
-    java -Xms2g -Xmx8g -cp rw-server-1.0.jar com.sunny.rw.server.application.${SERVER} ${CONFIG_FILE} > start.log 2>&1
+    nohup java -Xms2g -Xmx8g -cp rw-server-1.0.jar com.sunny.rw.server.application.${SERVER} ${CONFIG_FILE} > start.log 2>&1 &
     echo $! > ${PID_FILE}
 }
 
